@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <style>
+        body{
+            background-image: url('img/back9.jpg');
+            background-color:#cccccc;
+            height: 100%;
+            width: 100%;
+            /*把背景图片放大到适合元素容器的尺寸，图片比例不变*/
+            background-size:cover;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #bacbd6e7;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .leader {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            width: 1450px;
+            height: 680px;
+        }
+
+        .lea{
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">主页</a></li>
+        <li><a href="book.html">书籍</a></li>
+        <li><a href="music.html">听音乐</a></li>
+        <li><a href="game.html">游戏</a></li>
+        <li><a href="animo.html">猛兽</a></li>
+        <li><a href="https://blog.csdn.net/qq_65365889/article/details/131494546" target="_blank">报告</a></li>
+    </ul>
+
+    <div class="leader">
+        <div class="lea">
+            <h1>书籍页面</h1>
+            <p>点击书籍封面可以进入到书籍的介绍网页</p>
+        </div>
+        <div class="lea">
+            <h1>音乐页面</h1>
+            <p>点击图片实现音乐播放和关闭</p>
+        </div>
+        <div class="lea">
+            <h1>游戏页面</h1>
+            <p>稍等片刻，它会自动轮转图片</p>
+        </div>
+        <div class="lea">
+            <h1>猛兽页面</h1>
+            <p>鼠标放到图片上会动，去了解更多也可以点击</p>
+        </div>
+    </div>
+</body>
+
+</html>

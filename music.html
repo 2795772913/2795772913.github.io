@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐</title>
+    <style>
+        body {
+            background-image: url('img/back5.jpg');
+            background-color: #cccccc;
+            height: 100%;
+            width: 100%;
+            /*把背景图片放大到适合元素容器的尺寸，图片比例不变*/
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #bacbd6e7;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            display: block;
+            animation: rotate 15s linear infinite;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateZ(0deg);
+                /*从0度开始*/
+            }
+
+            100% {
+                transform: rotateZ(360deg);
+                /*360度结束*/
+            }
+        }
+
+        .ci {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+
+        .responsive {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+
+        p {
+            width: 260px;
+            height: 180px;
+            background-color: #bec839;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">主页</a></li>
+        <li><a href="book.html">书籍</a></li>
+        <li><a href="music.html">听音乐</a></li>
+        <li><a href="game.html">游戏</a></li>
+        <li><a href="animo.html">猛兽</a></li>
+        <li><a href="https://blog.csdn.net/qq_65365889/article/details/131494546" target="_blank">报告</a></li>
+    </ul>
+
+    <audio id="music" src="music/稻香-周杰伦.128.mp3" loop autoplay></audio>
+    <audio id="music1" src="music/追梦赤子心-GALA.128.mp3" loop autoplay></audio>
+    <div class="responsive">
+        <div class="content">
+            <img src="img/back2.jpg" class="circle" onClick="play()" alt="稻香图片">
+            <h1>稻香（点击图片播放或停止）</h1>
+            <p>稻香 – 周杰伦 (Jay Chou)<br>
+                词：周杰伦<br>
+                曲：周杰伦<br>
+                编曲：黄雨勋<br>
+                对这个世界如果你有太多的抱怨<br>
+                跌倒了就不敢继续往前走<br>
+                为什么人要这么的脆弱堕落<br>
+                请你打开电视看看<br>
+                多少人为生命在努力勇敢的走下去<br>
+                我们是不是该知足<br>
+                珍惜一切就算没有拥有<br>
+                还记得你说家是唯一的城堡<br>
+                随着稻香河流继续奔跑<br>
+                微微笑 小时候的梦我知道<br>
+                不要哭让萤火虫带着你逃跑<br>
+                乡间的歌谣永远的依靠<br>
+                回家吧 回到最初的美好<br>
+                不要这么容易就想放弃<br>
+                就像我说的<br>
+                追不到的梦想换个梦不就得了<br>
+                为自己的人生鲜艳上色<br>
+                先把爱涂上喜欢的颜色<br>
+                笑一个吧<br>
+                功成名就不是目的<br>
+                让自己快乐快乐这才叫做意义<br>
+                童年的纸飞机<br>
+                现在终于飞回我手里<br>
+                所谓的那快乐<br>
+                赤脚在田里追蜻蜓追到累了<br>
+                偷摘水果被蜜蜂给叮到怕了<br>
+                谁在偷笑呢<br>
+                我靠着稻草人<br>
+                吹着风 唱着歌 睡着了<br>
+                午后吉他在虫鸣中更清脆<br>
+                阳光洒在路上就不怕心碎<br>
+                珍惜一切 就算没有拥有<br>
+                还记得你说家是唯一的城堡<br>
+                随着稻香河流继续奔跑<br>
+                微微笑 小时候的梦我知道<br>
+                不要哭让萤火虫带着你逃跑<br>
+                乡间的歌谣永远的依靠<br>
+                回家吧 回到最初的美好<br>
+                还记得你说家是唯一的城堡<br>
+                随着稻香河流继续奔跑<br>
+                微微笑 小时候的梦我知道<br>
+                不要哭让萤火虫带着你逃跑<br>
+                乡间的歌谣永远的依靠<br>
+                回家吧 回到最初的美好</p>
+        </div>
+
+        <div class="content">
+            <img src="img/music1.jpg" class="circle" onClick="play1()" alt="追梦图片">
+            <h1>追梦赤子心（点击图片播放或停止）</h1>
+            <p>歌名：追梦赤子心<br>
+                演唱：GALA<br>
+                作词：苏朵<br>
+                作曲：苏朵<br>
+                充满鲜花的世界到底在哪里<br>
+                如果它真的存在那么我一定会去<br>
+                我想在那里最高的山峰矗立<br>
+                不在乎它是不是悬崖峭壁<br>
+                用力活着用力爱哪怕肝脑涂地<br>
+                不求任何人满意只要对得起自己<br>
+                关于理想我从来没选择放弃<br>
+                即使在灰头土脸的日子里<br>
+                也许我没有天分 但我有梦的天真<br>
+                我将会去证明用我的一生<br>
+                也许我手比脚笨 但我愿不停探寻<br>
+                付出所有的青春不留遗憾<br>
+                向前跑 迎着冷眼和嘲笑<br>
+                生命的广阔不历经磨难怎能感到<br>
+                命运它无法让我们跪地求饶<br>
+                就算鲜血洒满了怀抱<br>
+                继续跑 带着赤子的骄傲<br>
+                生命的闪耀不坚持到底怎能看到<br>
+                与其苟延残喘不如纵情燃烧吧<br>
+                有一天会再发芽<br>
+                失败后郁郁寡欢<br>
+                那是懦夫的表现<br>
+                只要一息尚存请握紧双拳<br>
+                在天色破晓之前<br>
+                我们要更加勇敢<br>
+                等待日出时最耀眼的瞬间<br>
+                向前跑 迎着冷眼和嘲笑<br>
+                生命的广阔不历经磨难怎能感到<br>
+                命运它无法让我们跪地求饶<br>
+                就算鲜血洒满了怀抱<br>
+                继续跑 带着赤子的骄傲<br>
+                生命的闪耀不坚持到底怎能看到<br>
+                与其苟延残喘不如纵情燃烧吧<br>
+                为了心中的美好<br>
+                不妥协直到变老 </p>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var audio = document.getElementById('music');
+            var audio1 = document.getElementById('music1');
+            audio.pause();//打开页面时无音乐
+            audio1.pause();
+        }
+
+        function play() {
+            var audio = document.getElementById('music');
+            if (audio.paused) {
+                audio.play();
+                document.getElementById('musicImg').src = "images/play.png";
+            } else {
+                audio.pause();
+                audio.currentTime = 0;//音乐从头播放
+                document.getElementById('musicImg').src = "images/stop.png";
+            }
+        }
+
+        function play1() {
+            var audio = document.getElementById('music1');
+            if (audio.paused) {
+                audio.play();
+                document.getElementById('musicImg').src = "images/play.png";
+            } else {
+                audio.pause();
+                audio.currentTime = 0;//音乐从头播放
+                document.getElementById('musicImg').src = "images/stop.png";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

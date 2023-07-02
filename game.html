@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏</title>
+    <style>
+        body {
+            background-image: url('img/back8.jpg');
+            background-color: #cccccc;
+            height: 100%;
+            width: 100%;
+            /*把背景图片放大到适合元素容器的尺寸，图片比例不变*/
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #bacbd6e7;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .banner-container {
+            width: 1000px;
+            height: 660px;
+            /* 轮播图居中 */
+            margin: 1rem auto;
+            /* 隐藏超出展示容器的内容 */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .banner-container .banner-img-container {
+            width: 5000px;
+            height: 660px;
+            overflow: hidden;
+            position: absolute;
+            /* 开启弹性盒，让图片横向排列 */
+            display: flex;
+            animation: run 20s ease infinite;
+        }
+
+        .total {
+            width: 1000px;
+            height: 100%;
+        }
+
+        .banner-container .banner-img-container img {
+            width: 1000px;
+            height: 80%;
+        }
+
+        /* 动画关键帧 */
+        @keyframes run {
+
+            0%,
+            10% {
+                /* margin-left: 0; */
+                transform: translateX(0);
+            }
+
+            20%,
+            30% {
+                /* margin-left: -1000px;; */
+                transform: translateX(-1000px);
+            }
+
+            40%,
+            50% {
+                /* margin-left: -2000px; */
+                transform: translateX(-2000px);
+            }
+
+            60%,
+            70% {
+                /* margin-left: -3000px; */
+                transform: translateX(-3000px);
+            }
+
+            80%,
+            90% {
+                /* margin-left: -4000px; */
+                transform: translateX(-4000px);
+            }
+
+            100% {
+                /* margin-left: 0; */
+                transform: translateX(0);
+            }
+        }
+
+        P {
+            width: 50%;
+            height: 680px;
+            float: left;
+            /*让两个p标签在同一行显示*/
+            font-family: "华文彩云";
+            /*设置字体*/
+            font-size: 30px;
+            /*设置字体大小*/
+            font-weight: 100;
+            /*设置字体粗细*/
+            font-weight: bolder;
+            /*设置字体粗细*/
+            -webkit-text-stroke: 1px #020a0a;
+            /*文字描边*/
+            -webkit-text-fill-color: aliceblue;
+            /*设置文字的填充颜色*/
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">主页</a></li>
+        <li><a href="book.html">书籍</a></li>
+        <li><a href="music.html">听音乐</a></li>
+        <li><a href="game.html">游戏</a></li>
+        <li><a href="animo.html">猛兽</a></li>
+        <li><a href="https://blog.csdn.net/qq_65365889/article/details/131494546" target="_blank">报告</a></li>
+    </ul>
+
+    <div class="banner-container">
+        <!-- 创建图片存储容器 -->
+        <div class="banner-img-container">
+            <div class="total">
+                <img src="img/game1.jpg" alt="">
+                <p>“十步杀一人。千里不留行”李白，定位刺客，高爆发物理伤害，打野</p>
+            </div>
+            <div>
+                <img src="img/game2.jpg" alt="">
+                <p>“绝世舞姬”貂蝉，定位法师，高爆发真伤，中路</p>
+            </div>
+            <div>
+                <img src="img/game3.jpg" alt="">
+                <p>“一个筋斗十万八千里”孙悟空，风一样的男子，定位刺客，高爆发物理伤害，打野</p>
+            </div>
+            <div>
+                <img src="img/game4.jpg" alt="">
+                <p>“这一剑把握几成？九成！剑来！”干将莫邪，定位法师，高爆发法术伤害，中路</p>
+            </div>
+            <div>
+                <img src="img/game5.jpg" alt="">
+                <p>“我的貂蝉在哪里”吕布，高爆发真实伤害，定位战士，对抗路</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

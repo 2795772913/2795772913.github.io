@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动物</title>
+    <style>
+        body{
+            background-image: url('img/back3.jpg');
+            background-color:#cccccc;
+            height: 100%;
+            width: 100%;
+            /*把背景图片放大到适合元素容器的尺寸，图片比例不变*/
+            background-size:cover;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+
+        .img img{
+            transition: all 0.3s;
+        }
+
+        .img img:hover{
+            box-shadow: 0 16px 32px 0 rgba(48, 55, 66, 0.15);
+            transform: translate(0, -10px);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #bacbd6e7;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .responsive {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+
+        .pic {
+            text-decoration: none;
+            padding: 10px 30px;
+            background-color: rgb(128, 255, 0);
+        }
+
+        p {
+            width: 240px;
+            height: 180px;
+            background-color: #cab0b0;
+            overflow: scroll;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">主页</a></li>
+        <li><a href="book.html">书籍</a></li>
+        <li><a href="music.html">听音乐</a></li>
+        <li><a href="game.html">游戏</a></li>
+        <li><a href="animo.html">猛兽</a></li>
+        <li><a href="https://blog.csdn.net/qq_65365889/article/details/131494546" target="_blank">报告</a></li>
+    </ul>
+
+    <div class="responsive">
+        <div class="img">
+            <img src="img/th.jpg">
+            <h1>熊猫</h1>
+            <h2>花花</h2>
+            <p>众多熊猫迷心中的“白月光”——大熊猫和花，被粉丝亲切地称为花花。
+                于2020年7月4日与双胞胎弟弟和叶出生在成都大熊猫繁育研究基地月亮产房，
+                初生体重200g，为辨识度和颜值都很高的一只熊猫。现居成都大熊猫繁育研究基地幼年园，
+                母亲为“洁癖公主”大熊猫成功。</p>
+            <a href="https://zhuanlan.zhihu.com/p/611745144" class="pic" target="_blank">去了解更多</a>
+        </div>
+
+        <div class="img">
+            <img src="img/menglan1.jpg" width="245px">
+            <h1>熊猫</h1>
+            <h2>萌兰</h2>
+            <p>大熊猫萌兰，雄性。2015年7月4日出生于成都大熊猫繁育研究基地，
+                小名么么儿，是白德耀斯和蓬蓬脸家族的明星成员之一。父亲美兰，母亲萌萌。
+                萌兰出生后就表现出来与众不同，他不喜欢趴睡却喜欢仰睡。
+                小时候作为月亮产房的三巨头之一，喜欢压其他熊，有“月亮小霸王”的称号。</p>
+            <a href="https://zhuanlan.zhihu.com/p/616901406" class="pic" target="_blank">去了解更多</a>
+        </div>
+
+        <div class="img">
+            <img src="img/tiger1.jpg" width="245" height="320px">
+            <h1>老虎</h1>
+            <h2>凝视</h2>
+            <p>老虎是典型的山地林栖动物，由南方的热带雨林、常绿阔叶林，
+                以至北方的落叶阔叶林和针阔叶混交林，都能很好的生活。
+                虎常单独活动，只有在繁殖季节雌雄才在一起生活。无固定巢穴，
+                多在山林间游荡寻食。能游泳。虎多黄昏活动，白天多潜伏休息，
+                没有惊动则很少出来。虎的活动范围较大，在北方日寻食活动范围可达数十公里；
+                在南方因食物较多则活动距离较短。</p>
+            <a href="https://baike.baidu.com/item/%E8%99%8E/865" class="pic" target="_blank">去了解更多</a>
+        </div>
+
+        <div class="img">
+            <img src="img/yabo.jpg" width="245" height="320px">
+            <h1>鸭脖</h1>
+            <h2>就是鸭脖</h2>
+            <p>联合调查组经勘察现场，调取监控视频发现，6月1日，
+                学生在食堂吃出疑似为“鼠头”的异物，
+                被涉事食堂工作人员事发当日丢弃。通过查看食堂后厨视频，
+                查阅采购清单，询问涉事食堂负责人、后厨相关当事人、
+                当事学生和现场围观学生等，判定异物不是鸭脖。</p>
+            <a href="https://www.thepaper.cn/newsDetail_forward_23521769" class="pic" target="_blank">去了解更多</a>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="img">
+            <img src="img\long.jpg" width="245" height="320px">
+            <h1>龙</h1>
+            <h2>中国龙</h2>
+            <p>龙是中国等东亚区域古代神话传说中的神异动物，
+                为鳞虫之长。常用来象征祥瑞，
+                是汉族等东亚民族最具代表性的传统文化之一，
+                龙的传说等龙文化非常丰富。</p>
+            <a href="https://baike.baidu.com/item/%E9%BE%99/13027234" class="pic" target="_blank">去了解更多</a>
+        </div>
+
+        <div class="img">
+            <img src="img/she.jpg" width="245px" height="320px">
+            <h1>蛇</h1>
+            <h2>生肖蛇</h2>
+            <p>生肖蛇（Zodiac Snake）是中国十二生肖之一，
+                逢巳年出生的人属蛇，生肖蛇的人具有周密的思考力，
+                立定志愿后必勇往直前的性格。表面冷漠占有欲很强，
+                不易亲近也不轻易表露真心。财运上非常幸运，
+                对金钱欲很强。最有名蛇故事是白蛇传。</p>
+            <a href="https://baike.sogou.com/v58607578.htm?fromTitle
+            =%E7%94%9F%E8%82%96%E8%9B%87" class="pic" target="_blank">去了解更多</a>
+        </div>
+
+        <div class="img">
+            <img src="img/hours.jpg" width="245" height="320px">
+            <h1>马</h1>
+            <h2>千里马</h2>
+            <p>马在中国文化中有着重要的地位，
+                是中国古代文化中不可缺少的一部分。
+                从古代起，马就被赋予了神圣的地位，
+                被视为中华文明的象征，是中国传统文化中重要的组成部分。
+                在中国古代，马是人们最受欢迎的宠物，被用于宫廷仪仗队，
+                也是古代军队的重要组成部分，在古代文化中扮演着重要的角色。
+                此外，马也是古代文化的组成部分，被用作艺术表现，如马面人物、
+                马头人物、马面钱币等。</p>
+            <a href="https://zhuanlan.zhihu.com/p/362580944" class="pic" target="_blank">去了解更多</a>
+        </div>
+
+        <div class="img">
+            <img src="img/hou.jpg" width="245" height="320px">
+            <h1>生肖猴</h1>
+            <h2>齐天大圣</h2>
+            <p>猴是中国十二生肖排行第九的 动物 ，
+                对应地支为"申"。. 我国农历采用干支纪年，逢壬申年、
+                甲申年、丙申年、戊申年、庚申年，民间俗称猴年，
+                最近几个猴年对应的公历年份是1992、2004、2016、2028、2040。
+                 中国正式使用干支纪年始于东汉时期，以十二生肖指代地支
+                 并联系人的生年最晚可以追溯到南北朝时期。.
+                 天文专家表示，农历丙申猴年是一个平年，
+                 包括7个大月（30天）和5个小月（29天），有355天</p>
+            <a href="https://zhuanlan.zhihu.com/p/264801351" class="pic" target="_blank">去了解更多</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
